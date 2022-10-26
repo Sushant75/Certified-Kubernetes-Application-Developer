@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-variables
+spec:
+  containers:
+    - name: ubuntu-env-variables
+      image: ubuntu
+      env:
+        - name: POSTGRES_USERNAME
+          value: "postgres"
